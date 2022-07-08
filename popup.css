@@ -1,0 +1,14 @@
+h1 {
+	font-size: 14px;
+}
+
+.copyright {
+	text-align: right;
+	margin-top: 10px;
+	font-size: 10px;
+	color: #999;
+}
+
+.copyright .author-name {
+	text-decoration: underline;
+}
