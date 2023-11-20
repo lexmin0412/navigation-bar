@@ -1,9 +1,9 @@
 {
-  "name": "example-dir",
-  "displayName": "Example dir",
+  "name": "lexmin-navigator",
+  "displayName": "一起去星辰大海",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "cellerchan",
+  "author": "lexmin0412",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
