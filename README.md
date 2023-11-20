@@ -9,3 +9,6 @@ pnpm install
 pnpm dev
 ```
 
+## Appreciation
+
+- [Plasmo](https://github.com/PlasmoHQ/plasmo)
