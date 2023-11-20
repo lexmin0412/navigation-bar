@@ -38,7 +38,7 @@ function IndexPopup() {
 				{
 					websites.map((item)=>{
 						return (
-							<li style={{
+							<li key={item.title} style={{
 								height: '32px',
 								lineHeight: '32px'
 							}}>
