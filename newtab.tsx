@@ -1,4 +1,6 @@
-import { Carousel } from "antd";
+import { ReloadOutlined } from '@ant-design/icons';
+import fetch from '@toolkit-fe/request';
+import { Button, Carousel } from "antd";
 import { useEffect, useState } from "react";
 
 
@@ -36,12 +38,11 @@ function IndexNewtab() {
 
 
 	const initImgList = async() => {
+
 		fetch(
-			"https://lexmin.oss-cn-hangzhou.aliyuncs.com/statics/browser-extensions/pandas.json"
-		).then(res=>{
-			return res.json()
-		}).then((res)=>{
-			console.log('resss', res)
+			"https://lexmin.oss-cn-hangzhou.aliyuncs.com/statics/browser-extensions/pandas.json", {}
+		).then((res: any[])=>{
+			console.log('resssxixiix', res)
 			if (res?.length) {
 				setImgList(res)
 			}
@@ -76,6 +77,42 @@ function IndexNewtab() {
 					)
 				})}
 			</Carousel>
+
+			<Button
+				type='primary'
+				style={{
+					position: 'fixed',
+					top: '20px',
+					right: '20px',
+					display: 'flex',
+					alignItems: 'center',
+					color: '#fff',
+					opacity: '0.8'
+				}}
+				onClick={()=>{
+					setImgList([])
+					initImgList()
+				}}
+			>
+				<span style={{
+					marginRight: '4px'
+				}}>
+					刷新
+				</span>
+				<ReloadOutlined />
+			</Button>
+			{/* <div
+				style={{
+					position: 'fixed',
+					top: 0,
+					right: 0,
+					display: 'flex',
+					alignItems: 'center',
+					color: '#fff',
+					background: '#4c86ff'
+				}}
+			>
+			</div> */}
 
 			<div
     		style={{
