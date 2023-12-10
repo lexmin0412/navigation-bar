@@ -2,6 +2,7 @@ import { ReloadOutlined } from '@ant-design/icons';
 import fetch from '@toolkit-fe/request';
 import { Button, Carousel } from "antd";
 import { useEffect, useState } from "react";
+import "antd/dist/antd.css"
 
 
 function IndexNewtab() {
@@ -99,7 +100,7 @@ function IndexNewtab() {
 				}}>
 					刷新
 				</span>
-				<ReloadOutlined />
+				<ReloadOutlined rev='' />
 			</Button>
 			{/* <div
 				style={{
@@ -127,7 +128,9 @@ function IndexNewtab() {
 					color: '#fff'
     		}}
     	>
-        <h1>Hello 小黄</h1>
+        <h1 style={{
+					color: 'white'
+				}}>Hello</h1>
         <h1
           style={{
             color: "white"

@@ -43,7 +43,7 @@ function IndexPopup() {
 				width: '200px',
       }}>
       <h1>
-				一起去星辰大海。
+				聚宝盆，发现你的发现。
       </h1>
 			<ul>
 				{
